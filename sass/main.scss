@@ -1,0 +1,17 @@
+@import "./base/resets";
+.header{
+    
+    .nav{
+        .nav__ul{
+            width: 100%;
+            .nav__ul__li{
+                background-color: rgb(194, 207, 12);
+                border: 1px solid black;
+                color: rgb(5, 5, 5);
+                display: inline;
+                
+
+            }
+        }
+    }
+}

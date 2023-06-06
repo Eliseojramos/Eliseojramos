@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.header .nav .nav__ul {
+  width: 100%; }
+  .header .nav .nav__ul .nav__ul__li {
+    background-color: #c2cf0c;
+    border: 1px solid black;
+    color: #050505;
+    display: inline; }
