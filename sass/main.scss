@@ -1,17 +1,78 @@
 @import "./base/resets";
-.header{
-    
-    .nav{
+.grid{
+    background-color: aliceblue;
+    height: 100vh;
+    display: grid;
+    grid-template:  8vh auto 10vh / 100vw; 
+    grid-template-areas: 
+    "gridHeader"
+    "gridMain"
+    "gridFooter";
+}
+.gridHeader{
+    grid-area:gridHeader;
+       height: 100%;
+       .nav{
+        height: 100%;
+        border-radius: 0px 0px 10px 10px ;
+       }
         .nav__ul{
             width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            border-radius: 0px 0px 10px 10px;
+            background-color: #e4f30e;
+            border-bottom: 1px solid;
+            .nav__ul__li__i{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+                height: 100%;
+            }
+            .icon{
+                height: 80%;
+                width: 80%;
+                
+            }
             .nav__ul__li{
-                background-color: rgb(194, 207, 12);
-                border: 1px solid black;
                 color: rgb(5, 5, 5);
-                display: inline;
+                display: flex;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                :hover{
+                    background-color: cadetblue;
+                }
+                
+                .nav__ul__li__a{
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    
+                }
                 
 
             }
         }
     }
+
+.gridMain{
+    grid-area: gridMain;
+    background-color:aliceblue;
+}
+
+
+.gridFooter{
+    grid-area: gridFooter;
+    background-color: brown;
 }
