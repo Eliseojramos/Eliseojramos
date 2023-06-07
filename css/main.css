@@ -14,8 +14,7 @@
 .gridHeader {
   grid-area: gridHeader; }
   .gridHeader .nav {
-    height: 100%;
-    border-radius: 0px 0px 10px 10px; }
+    height: 100%; }
   .gridHeader .nav__ul {
     width: 100%;
     height: 100%;
@@ -23,18 +22,10 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    border-radius: 0px 0px 10px 10px;
     background-color: #e4f30e;
     border-bottom: 1px solid; }
-    .gridHeader .nav__ul .nav__ul__li__i {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40%;
-      height: 100%; }
-    .gridHeader .nav__ul .icon {
-      height: 80%;
-      width: 80%; }
+    .gridHeader .nav__ul .logo {
+      width: 20%; }
     .gridHeader .nav__ul .nav__ul__li {
       color: #050505;
       display: flex;
@@ -54,11 +45,14 @@
         align-items: center; }
 
 .gridMain {
+  text-align: center;
   grid-area: gridMain;
-  background-color: aliceblue; }
+  background-color: aliceblue;
+  border-right: 1px solid black; }
 
 .gridAside {
-  grid-area: gridAside; }
+  grid-area: gridAside;
+  text-align: center; }
 
 .gridFooter {
   grid-area: gridFooter;

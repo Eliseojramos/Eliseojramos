@@ -14,7 +14,6 @@
     grid-area:gridHeader;
        .nav{
         height: 100%;
-        border-radius: 0px 0px 10px 10px ;
        }
         .nav__ul{
             width: 100%;
@@ -23,20 +22,10 @@
             align-items: center;
             justify-content: center;
             height: 100%;
-            border-radius: 0px 0px 10px 10px;
             background-color: #e4f30e;
             border-bottom: 1px solid;
-            .nav__ul__li__i{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 40%;
-                height: 100%;
-            }
-            .icon{
-                height: 80%;
-                width: 80%;
-                
+            .logo{
+                width: 20%;
             }
             .nav__ul__li{
                 color: rgb(5, 5, 5);
@@ -49,6 +38,8 @@
                     background-color: cadetblue;
                 }
                 
+                
+                
                 .nav__ul__li__a{
                     text-decoration: none;
                     color: rgb(0, 0, 0);
@@ -56,22 +47,23 @@
                     height: 100%;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    
-                    
+                    align-items: center;    
                 }
-                
-
             }
         }
     }
 
+
+
 .gridMain{
+    text-align: center;
     grid-area: gridMain;
     background-color:aliceblue;
+    border-right: 1px solid black;
 }
 .gridAside{
     grid-area: gridAside;
+    text-align: center;
 }
 
 
