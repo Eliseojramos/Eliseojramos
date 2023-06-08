@@ -24,8 +24,8 @@
     height: 100%;
     background-color: #e4f30e;
     border-bottom: 1px solid; }
-    .gridHeader .nav__ul .logo {
-      width: 20%; }
+    .gridHeader .nav__ul .nav__ul__li.logo {
+      width: 30%; }
     .gridHeader .nav__ul .nav__ul__li {
       color: #050505;
       display: flex;
