@@ -8,34 +8,47 @@
   background-color: aliceblue;
   height: 100vh;
   display: grid;
-  grid-template: 8vh auto auto 10vh / 80% 20%;
+  grid-template: 12vh auto auto 10vh / 80% 20%;
   grid-template-areas: "gridHeader gridHeader" "gridMain gridAside" "gridMain gridAside" "gridFooter gridFooter "; }
 
 .gridHeader {
   grid-area: gridHeader; }
   .gridHeader .nav {
-    height: 100%; }
-  .gridHeader .nav__ul {
-    width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    flex-wrap: wrap;
     background-color: #e4f30e;
     border-bottom: 1px solid; }
-    .gridHeader .nav__ul .nav__ul__li.logo {
+    .gridHeader .nav .nav__search {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .gridHeader .nav .nav__search .nav__search__i {
+        height: 100%; }
+      .gridHeader .nav .nav__search .nav__search__icon {
+        width: 2%; }
+        .gridHeader .nav .nav__search .nav__search__icon .material-symbols-outlined {
+          width: 100%;
+          height: 100%; }
+    .gridHeader .nav .nav__ul {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center; }
+    .gridHeader .nav .nav__ul__li.logo {
       width: 30%; }
-    .gridHeader .nav__ul .nav__ul__li {
+    .gridHeader .nav .nav__ul__li {
       color: #050505;
       display: flex;
       height: 100%;
       width: 100%;
       justify-content: center;
       align-items: center; }
-      .gridHeader .nav__ul .nav__ul__li :hover {
+      .gridHeader .nav .nav__ul__li :hover {
         background-color: cadetblue; }
-      .gridHeader .nav__ul .nav__ul__li .nav__ul__li__a {
+      .gridHeader .nav .nav__ul__li .nav__ul__li__a {
         text-decoration: none;
         color: black;
         width: 100%;
