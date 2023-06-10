@@ -83,6 +83,59 @@
     background-color:aliceblue;
     border-right: 1px solid black;
 }
+.cont{
+    display: flex;
+    flex-flow: column;
+    .cont__articulos{
+        height: 20%;}
+    }
+        
+ 
+        
+        .cont__articulos__a{
+            display: flex;
+            border: 1px solid black;
+            padding: 10px;
+            align-items: center;
+            text-decoration: none;
+            :active{
+                color: black;
+            }   
+            :visited{
+                color: black;
+            }
+            
+        }
+            
+        
+        .container{
+            width: 18%;
+            height: 100%;
+            padding: 0.4rem;
+            .container__img{
+                width: 90%;
+                height: 90%;
+            }
+        }
+        
+        
+        
+            .cont__articulos__a__txt{
+                display: flex;
+                flex-direction: column;}
+                .precio{
+                    color: rgb(16, 193, 16);
+                    display: flex;
+                    justify-content: flex-end;
+                    font-weight: 700;
+                    font-size: large;
+                }
+               
+            
+        
+        
+    
+
 .gridAside{
     grid-area: gridAside;
     text-align: center;
