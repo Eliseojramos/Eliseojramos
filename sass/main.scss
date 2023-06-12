@@ -78,6 +78,8 @@
 
 
 .gridMain{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     grid-area: gridMain;
     background-color:aliceblue;
