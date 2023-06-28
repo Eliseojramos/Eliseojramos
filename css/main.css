@@ -6,7 +6,7 @@
 
 .grid {
   background-color: aliceblue;
-  color: black;
+  color: #48178b;
   height: auto;
   display: grid;
   grid-template: 12vh auto 10vh / 80% 20%;
@@ -14,19 +14,24 @@
   .grid .gridHeader {
     grid-area: gridHeader; }
     .grid .gridHeader .nav {
+      color: #48178b;
       height: 100%;
       display: grid;
       grid-template: 50% 50% / 10% 80%;
       grid-template-areas: "logo buscador" "logo barra";
-      background-color: #e4f30e;
+      background-color: #000000;
       border-bottom: 1px solid; }
       .grid .gridHeader .nav .logo {
         grid-area: logo;
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        color: #48178b; }
         .grid .gridHeader .nav .logo .logo__a {
           display: flex;
-          justify-content: center; }
+          justify-content: center;
+          color: #48178b; }
+          .grid .gridHeader .nav .logo .logo__a .logo__a__img {
+            color: #48178b; }
       .grid .gridHeader .nav .nav__search {
         grid-area: buscador;
         display: flex;
@@ -39,12 +44,13 @@
           width: 4%;
           text-decoration: none; }
           .grid .gridHeader .nav .nav__search .nav__search__icon :visited {
-            color: black; }
+            color: #cababa; }
           .grid .gridHeader .nav .nav__search .nav__search__icon :active {
-            color: black; }
+            color: #dac9c9; }
           .grid .gridHeader .nav .nav__search .nav__search__icon :hover {
-            background-color: darkgray; }
+            background-color: #8d2e95; }
           .grid .gridHeader .nav .nav__search .nav__search__icon .material-symbols-outlined {
+            color: #48178b;
             width: 100%;
             height: 100%;
             border-radius: 20px;
@@ -55,7 +61,6 @@
         grid-area: barra;
         display: flex; }
       .grid .gridHeader .nav .nav__ul__li {
-        color: #050505;
         display: flex;
         height: 100%;
         width: 100%;
@@ -64,8 +69,8 @@
         .grid .gridHeader .nav .nav__ul__li :hover {
           background-color: cadetblue; }
         .grid .gridHeader .nav .nav__ul__li .nav__ul__li__a {
+          color: #48178b;
           text-decoration: none;
-          color: black;
           width: 100%;
           height: 100%;
           display: flex;
@@ -76,7 +81,7 @@
     flex-direction: column;
     text-align: center;
     grid-area: gridMain;
-    background-color: aliceblue;
+    background-color: #20262e;
     border-right: 1px solid black;
     height: 100%; }
     .grid .gridMain .cont {
@@ -110,6 +115,8 @@
           .grid .gridMain .cont .cont__articulos .cont__articulos__a .cont__articulos__a__txt {
             display: flex;
             flex-direction: column; }
+            .grid .gridMain .cont .cont__articulos .cont__articulos__a .cont__articulos__a__txt h2, .grid .gridMain .cont .cont__articulos .cont__articulos__a .cont__articulos__a__txt p, .grid .gridMain .cont .cont__articulos .cont__articulos__a .cont__articulos__a__txt :visited {
+              color: #48178b; }
             .grid .gridMain .cont .cont__articulos .cont__articulos__a .cont__articulos__a__txt .precio {
               color: #10c110;
               display: flex;
@@ -120,7 +127,31 @@
     grid-area: gridAside;
     text-align: center;
     height: 100%;
-    background-color: aqua; }
+    background-color: #20262e; }
   .grid .gridFooter {
+    display: flex;
     grid-area: gridFooter;
-    background-color: brown; }
+    background-color: #000000;
+    align-items: center; }
+    .grid .gridFooter .f__ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-around; }
+      .grid .gridFooter .f__ul .f__ul__redes {
+        list-style: none;
+        font-weight: 800; }
+
+@media (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template: 12vh auto auto 10vh / 100%;
+    grid-template-areas: "gridHeader" "gridMain" "gridAside" "gridFooter"; }
+  .nav {
+    width: 100%; }
+  .nav__ul {
+    flex-wrap: wrap; }
+    .nav__ul .nav__ul__li {
+      flex-wrap: wrap; }
+  .cont__articulos__a {
+    flex-direction: column;
+    padding: 20 30 20 30; } }

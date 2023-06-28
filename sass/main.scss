@@ -1,7 +1,7 @@
 @import "./base/resets";
 .grid{
     background-color: aliceblue;
-    color: black;
+    color:rgba(72, 23, 139, 1);
     height: auto;
     display: grid;
     grid-template:  12vh auto 10vh / 80% 20%; 
@@ -12,23 +12,29 @@
 
 .gridHeader{
     grid-area:gridHeader;
-       .nav{
 
+       .nav{
+        color: rgba(72, 23, 139, 1);
         height: 100%;
         display: grid;
         grid-template: 50% 50% / 10% 80%;
         grid-template-areas: 
         "logo buscador"
         "logo barra";
-        background-color: #e4f30e;
+        background-color: #000000;
             border-bottom: 1px solid;
             .logo{
                 grid-area: logo;
                 display: flex;
                 justify-content: center;
+                color: rgba(72, 23, 139, 1);
                 .logo__a{
                     display: flex;
                     justify-content: center;
+                    color: rgba(72, 23, 139, 1);
+                    .logo__a__img{
+                        color: rgba(72, 23, 139, 1);
+                    }
                 }
                 
             }
@@ -45,15 +51,16 @@
             width: 4%;
             text-decoration: none;
             :visited{
-                    color: black;
+                    color: rgb(202, 186, 186);
                 }
                 :active{
-                    color: black;
+                    color: rgb(218, 201, 201);
                 }
                 :hover{
-                    background-color: darkgray;
+                    background-color: rgb(141, 46, 149);
                 }
             .material-symbols-outlined{
+                color: rgba(72, 23, 139, 1);
                 width: 100%;
                 height: 100%;
                 border-radius: 20px;
@@ -73,7 +80,6 @@
            
             }
             .nav__ul__li{
-                color: rgb(5, 5, 5);
                 display: flex;
                 height: 100%;
                 width: 100%;
@@ -86,8 +92,8 @@
                 
                 
                 .nav__ul__li__a{
+                    color: rgba(72, 23, 139, 1);
                     text-decoration: none;
-                    color: rgb(0, 0, 0);
                     width: 100%;
                     height: 100%;
                     display: flex;
@@ -107,7 +113,7 @@
     flex-direction: column;
     text-align: center;
     grid-area: gridMain;
-    background-color:aliceblue;
+    background-color:rgba(32, 38, 46, 1);
     border-right: 1px solid black;
     height: 100%;
 
@@ -149,6 +155,10 @@
     .cont__articulos__a__txt{
                 display: flex;
                 flex-direction: column;
+                h2,p,:visited{
+                    color: rgba(72, 23, 139, 1);
+                }                
+            
                 .precio{
                     color: rgb(16, 193, 16);
                     display: flex;
@@ -161,6 +171,7 @@
 }
 }
 
+
                
             
         
@@ -171,12 +182,52 @@
     grid-area: gridAside;
     text-align: center;
     height: 100%;
-    background-color: aqua;
+    background-color: rgba(32, 38, 46, 1)
 }
 
 
 .gridFooter{
+    display: flex;
     grid-area: gridFooter;
-    background-color: brown;
+    background-color:#000000;
+    align-items: center;
+    .f__ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        
+        .f__ul__redes{
+            list-style: none;
+            font-weight: 800;
+            
+        }
+    }
 }
+}
+
+ @media (max-width:600px){
+    .grid{
+        display: grid;
+        grid-template:  12vh auto auto 10vh / 100%; 
+        grid-template-areas: 
+        "gridHeader"
+        "gridMain"
+        "gridAside"
+        "gridFooter";
+    }
+    .nav{
+        width: 100%
+    }
+    .nav__ul{
+        flex-wrap: wrap;
+        .nav__ul__li{
+            flex-wrap: wrap;
+        }
+    }
+    
+ 
+ .cont__articulos__a{
+    flex-direction: column;
+    padding: 20 30 20 30;
+ }
 }
